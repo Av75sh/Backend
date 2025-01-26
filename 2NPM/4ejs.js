@@ -8,7 +8,7 @@ app.get('/home', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    res.render('4ejs')
+    res.render('1first')
 })
 
 app.listen(5000)
