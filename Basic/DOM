@@ -1,0 +1,8 @@
+/*
+document . getE1ementById()                ELEMENT OR NULL
+document . getE1ementsC1assName()          HTML COLLECTION
+document . getE1ementsByTagName ( )        HTML COLLECTION
+document . querySe1ector( )                FIRST ELEMENT OR NULL
+document . querySe1ectorA11 ( )            NODELIST
+
+*/
