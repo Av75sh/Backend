@@ -10,20 +10,20 @@ nodemon app.js               -> runs the app with nodemon
 
 
 ## Npx (node package executor)
-It is a command line utility which runn the program without installing it
+It is a command line utility which runs the program without installing it
 
 ``` Example
 npx nodemon app.js              -> runs nodemon directly without installing it
 ```
 
 ### HTTP
-We don't need to do npm everytime so we use `[npx nodemon file.js]` 
-this ('http) => import the build-in http module in node js which allow to create http server
+We don't need to do npm everytime so we can use `[npx nodemon file.js]` 
+this ('http) => import the build-in http module in node js which allow to create http server.
 
 ---
 
 1. ### Packages :-
-        is the reusalable code  [npmjs website for packages]
+        it is the reusalable code  [npmjs website for packages]
         Ex:- a particular code must be common in all node js files so we don't need to write it again we use the node packages
 
 2. ### Package.json / Package-lock.json :-
