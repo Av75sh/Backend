@@ -4,8 +4,9 @@ const app = express()
 app.set("view engine", 'ejs')
 
 app.use((req, res, next) => {
-    console.log("Middleware")
 
+    // custom middleware
+    console.log("Middleware")         
     const a = 10;
     const b = 11;
 
