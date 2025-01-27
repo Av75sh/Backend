@@ -39,7 +39,7 @@ this ('http) => import the build-in http module in node js which allow to create
 
 3. `Express` is a framework built on top of Node.js that provides additional functionality for creating web servers and APIs more easily.
         
-        Express is a web application framework built on top of Node.js. 
+        Express is a web application framework built on top of Node.js.
 
         
         
