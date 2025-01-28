@@ -19,7 +19,7 @@ Make 3 folder
 ``` js
     ** 2NPM folder **
     const dbConnection = require('./config/db')
-    const userModel = require('./models/user)
+    const userModel = require('./models/user')
 ```
 ``` js
     ** user.js **
@@ -40,3 +40,10 @@ Make 3 folder
 
     module.exports = connection
 ```
+
+## .gitignore
+We use .gitignore is a file in node js that specifies untrack files. That a git should ignore It is used to prevent certain files or folders from being include in git repo 
+
+1. **Auto generated files**  like `node-modules` as it could be install using npm i. So why waste space
+
+   2 **.env** it hold the information of `API_KEYS` , database credentials. hese should not be tracked to prevent accidental exposure.

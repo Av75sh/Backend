@@ -16,6 +16,12 @@ It is a command line utility which runs the program without installing it
 npx nodemon app.js              -> runs nodemon directly without installing it
 ```
 
+        Important steps to start with
+        npm init -y
+        npm install Express
+        npm i morgan
+        npm i nodemon
+
 ### HTTP
 We don't need to do npm everytime so we use `[npx nodemon file.js]` 
 this ('http) => import the build-in http module in node js which allow to create http server
