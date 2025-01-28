@@ -31,7 +31,9 @@ app.post('/post-form-data', async (req, res) => {            // make asynchronus
 
 // Create a route for reading user data
 app.get('/get-users', (req,res) => {
-    userModel.find().then((users) =>{
+    userModel.find(
+        {username: 'aviansh'}
+    ).then((users) =>{
         res.send(users)
     })
 })

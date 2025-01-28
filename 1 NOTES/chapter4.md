@@ -43,3 +43,14 @@ So to correct it we use asynchromous coding `aysnc & await`
 2. R -> Read
 3. U -> Update
 4. D -> Delete
+
+## Read operation
+```js
+pp.get('/get-users', (req,res) => {
+    userModel.find(
+        {username: 'aviansh'}
+    ).then((users) =>{
+        res.send(users)
+    })
+})
+```
