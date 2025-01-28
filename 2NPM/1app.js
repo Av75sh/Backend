@@ -20,14 +20,11 @@ app.get('/', (req,res) => {
  
 app.post('/post-form-data', async (req, res) => {            // make asynchronus to synchronus
     const {username, email, password} = req.body
-
     await userModel.create({
         username: username,
         email: email,
         password: password
     })
-
-
     res.send('Register user');
 })
 
