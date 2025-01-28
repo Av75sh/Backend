@@ -46,6 +46,14 @@ app.get('/update-users', async (req,res) =>{
         res.send(users)
 })
 
+//Delete users
+app.get('/delete-users', async (req,res) =>{
+    await userModel.findOneAndDelete(
+        {username: 'avinash'},
+        {email: 'sag02gh@gmail.com'})
+        res.send(users)
+})
+
 
 
 app.listen(5000, () => {

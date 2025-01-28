@@ -66,3 +66,14 @@ app.get('/update-users', async (req,res) =>{
 })
 
 ```
+
+## Delete operation
+``` js
+app.get('/delete-users', async (req,res) =>{
+    await userModel.findOneAndDelete(
+        {username: 'avinash'},
+        {email: 'sag02gh@gmail.com'})
+        res.send("Deleted user details")
+})
+
+```
