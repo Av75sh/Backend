@@ -46,7 +46,7 @@ So to correct it we use asynchromous coding `aysnc & await`
 
 ## Read operation
 ```js
-pp.get('/get-users', (req,res) => {
+pp.get('/read-users', (req,res) => {
     userModel.find(
         {username: 'aviansh'}
     ).then((users) =>{
