@@ -47,3 +47,5 @@ We use .gitignore is a file in node js that specifies untrack files. That a git 
 1. **Auto generated files**  like `node-modules` as it could be install using npm i. So why waste space
 
    2 **.env** it hold the information of `API_KEYS` , database credentials. hese should not be tracked to prevent accidental exposure.
+
+[Next Page](chapter4.md)
