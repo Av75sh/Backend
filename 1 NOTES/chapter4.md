@@ -34,3 +34,5 @@ app.post('/post-form-data', async (req, res) => {
 
 
 ## Async Code
+WHile we were wroking on the above code our **res.send** code was being executed before user details.
+So to correct it we use asynchromous coding `aysnc & await`
