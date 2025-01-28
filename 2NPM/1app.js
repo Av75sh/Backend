@@ -38,6 +38,17 @@ app.get('/read-users', (req,res) => {
     })
 })
 
+//update users
+app.get('/update-users', (req,res) =>{
+    userModel.findOneAndUpdate(
+        {username: 'aviansh'},
+        {email: 'sag02gh@gmail.com'}.then((users) => {
+            res.send(users)
+        })
+    )
+})
+
+
 
 app.listen(5000, () => {
     console.log("Server is running on port 5000");
