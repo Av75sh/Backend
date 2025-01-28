@@ -1,6 +1,6 @@
-<table>
-<thead>
-<tr> 
+<table> <thead> <tr> 
+No user data Shown Vs user data
+<td>
 
 ```js
  
@@ -14,26 +14,20 @@ app.post('/post-form-data', async (req, res) => {
     res.send('Register user');
 })
 
-
 ```
-
-</tr>
-
-<tr>
+</td><td>
 
 ```js
  
 app.post('/post-form-data', async (req, res) => {            
     const {username, email, password} = req.body
-    await userModel.create({
+    const newUser = await userModel.create({
         username: username,
         email: email,
         password: password
     })
-    res.send('Register user');
+    res.send(newUser);
 })
 
-
 ```
-
-</tr>
+</td> </tr> <thead></table>
