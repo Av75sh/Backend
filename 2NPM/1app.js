@@ -41,7 +41,7 @@ app.get('/read-users', (req,res) => {
 //update users
 app.get('/update-users', (req,res) =>{
     userModel.findOneAndUpdate(
-        {username: 'aviansh'},
+        {username: 'avinash'},
         {email: 'sag02gh@gmail.com'})
         res.send(users)
 })
