@@ -58,8 +58,8 @@ pp.get('/read-users', (req,res) => {
 
 ## Update operation
 ``` js
-app.get('/update-users', (req,res) =>{
-    userModel.findOneAndUpdate(
+app.get('/update-users', async (req,res) =>{
+    await userModel.findOneAndUpdate(
         {username: 'aviansh'},
         {email: 'sag02gh@gmail.com'})
         res.send("Updated user details")
