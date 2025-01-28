@@ -19,7 +19,7 @@ app.get('/', (req,res) => {
 
  
 app.post('/post-form-data', async (req, res) => {            // make asynchronus to synchronus
-    const {username, email, password} = req.body
+    const {username, email, password} = req.body             // destructuring 
     await userModel.create({
         username: username,
         email: email,
