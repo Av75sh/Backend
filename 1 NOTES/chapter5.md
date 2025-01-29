@@ -4,5 +4,6 @@
 
 ## tailwind tips 
 ``` css
-classname="bg-gray-100 dark:bg-gray-800 flex items-center justify-center
+classname="bg-gray-100 dark:bg-gray-800 flex items-center justify-center"
+classname= "w-screen h-screen"
 ```
