@@ -77,3 +77,7 @@ app.get('/delete-users', async (req,res) =>{
 })
 
 ```
+
+## res.send  Vs res.render
+res.send() => Need for plain text, JSON or other raw data
+res.render() => Used to render an HtML page (EJS)
