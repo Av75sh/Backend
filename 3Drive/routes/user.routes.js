@@ -12,3 +12,4 @@ router.post('/register', (req, res) => {
     res.send('User registered')
 })
 module.exports = router;
+
