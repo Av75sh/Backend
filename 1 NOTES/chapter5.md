@@ -7,3 +7,20 @@
 classname="bg-gray-100 dark:bg-gray-800 flex items-center justify-center"
 classname= "w-screen h-screen"
 ```
+
+## Express-validator
+When we are dealing with email and pass data should be valid for that use 
+```js
+const { body, validationResult } = require('express-validator');
+
+body('email').trim().isEmail().isLength({ min:10 }),
+
+const errors = validationResult(req);
+        if(!errors.isEmpty()){
+            return res.send(400).json({
+                errors: errors.array(),
+                message: 'Invalid data'
+            })
+        }
+        res.send(errors);
+```

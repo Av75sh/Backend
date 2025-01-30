@@ -13,7 +13,13 @@ router.post('/register',
     
     (req, res) => {
         const errors = validationResult(req);
-        console.log(errors);
+
+        if(!errors.isEmpty()){
+            return res.send(400).json({
+                errors: errors.array(),
+                message: 'Invalid data'
+            })
+        }
         res.send(errors);
 })
 module.exports = router;
