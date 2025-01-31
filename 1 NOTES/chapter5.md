@@ -25,3 +25,12 @@ const errors = validationResult(req);
         res.send(errors);
 ```
 
+## Important (env)
+Now your database is very private file for that use **env** files
+```js
+npm i dotenv
+dotenv.config();
+
+/* in env file */
+MONGO_URI=mongodb://0.0.0.0/3Drive
+```
