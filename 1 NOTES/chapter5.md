@@ -26,11 +26,22 @@ const errors = validationResult(req);
 ```
 
 ## Important (env)
-Now your database is very private file for that use **env** files
+Now your database is very private file for that use **env** files put env files to **.gitignore** we never upload env  to github
 ```js
 npm i dotenv
 dotenv.config();
 
 /* in env file */
 MONGO_URI=mongodb://0.0.0.0/3Drive
+```
+
+In MongDB file 
+```js
+const mongoose = require('mongoose');
+
+function connectToDB(){
+    mongoose.connect(process.env.MONGO_URI).then(() => {
+        console.log('COnnected to DB');
+    })
+}
 ```
