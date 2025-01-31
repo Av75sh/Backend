@@ -44,4 +44,11 @@ function connectToDB(){
         console.log('COnnected to DB');
     })
 }
+
+
+/* app.js */
+
+const connectToDB = require('./config/db');
+connectToDB();
+
 ```
