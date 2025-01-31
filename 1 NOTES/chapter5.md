@@ -24,3 +24,4 @@ const errors = validationResult(req);
         }
         res.send(errors);
 ```
+
